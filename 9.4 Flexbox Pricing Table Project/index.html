@@ -13,8 +13,6 @@
     .pricing-container {
       display: flex;
       flex-basis: 25%;
-      justify-content: space-around;
-      align-content: center;
     }
 
     .pricing-plan, .pricing-plan * {
@@ -26,7 +24,15 @@
     @media (max-width: 1250px) {
       .pricing-container {
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
+      }
+    }
+  
+    @media (min-width: 1251px) {
+      .pricing-container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
       }
     }
   </style>
