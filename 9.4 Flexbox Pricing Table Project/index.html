@@ -14,14 +14,7 @@
       display: flex;
       align-content: center;
       flex-shrink: 0;
-    }
-
-    .pricing-plan {
-      width: 25vw;
-      height: 25vw;
-      border-color: black;
-      background-color: lightgrey;
-      border-width: 2px;      
+      justify-content: space-between;
     }
 
     .pricing-plan, .pricing-plan * {
@@ -33,17 +26,30 @@
     @media (max-width: 1250px) {
       .pricing-container {
         flex-direction: column;
-        justify-content: space-between;
-        align-content: center;
+      }
+      .pricing-plan {
+      align-items: center;
+      width: 20vw;
+      height: 20vw;
+      border-color: black;
+      background-color: lightgrey;
+      border-width: 2px;
       }
     }
   
     @media (min-width: 1251px) {
       .pricing-container {
-      flex-direction: row;
-      justify-content: space-around;
-      align-content: center;
+      flex-direction: row; 
       }
+      .pricing-plan {
+      align-items: center;
+      width: 20vw;
+      height: 20vw;
+      border-color: black;
+      background-color: lightgrey;
+      border-width: 2px;           
+      }
+      
     }
   </style>
 </head>
