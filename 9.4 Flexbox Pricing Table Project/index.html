@@ -50,13 +50,15 @@
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
       .pricing-container {
-        flex-direction: column;               
+        flex-direction: column;
+        flex-shrink: 0;
       }
     }
   
     @media (min-width: 1251px) {
       .pricing-container {
-      flex-direction: row;       
+      flex-direction: row;
+      flex-shrink: 1;             
       }      
     }
 
