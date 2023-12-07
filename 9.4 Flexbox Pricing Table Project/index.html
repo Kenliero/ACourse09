@@ -62,17 +62,22 @@
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
        .pricing-container {
-        flex-direction: column;
+        flex-direction: column;  
+      }
+      .pricing-plan {
         height: 100%;
-        width: 300px;        
+        width: 300px;     
       }
     }
   
     @media (min-width: 1251px) {
       .pricing-container {
-      flex-direction: row;
-      width: 500px;
+        flex-direction: row;
       }      
+      .pricing-plan {
+        height: 100%;
+        width: 300px;     
+      }        
     }
 
     .plan-button {
