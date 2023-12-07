@@ -29,8 +29,8 @@
     .pricing-container {
       display: flex;
       flex: 1 1 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       justify-content: space-between;
       align-items: center;
       gap: 20px 20px;   
@@ -41,7 +41,7 @@
       border-color: rgb(0, 0, 0);
       background-color: lightgrey;
       border-width: 2px 2px;
-      width: 30%;        
+      width: 30%;     
       text-align: center;
       align-items: center;
       border-radius: 10px;    
@@ -63,17 +63,17 @@
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
        .pricing-container {
-        flex-direction: column;
-        width: 100%;
-        min-height: 30%;              
+        flex-direction: column;       
       }
+      .pricing-plan {
+        min-height: 30%;
+      }
+
      }
   
     @media (min-width: 1251px) {
       .pricing-container {
-        flex-direction: row;
-        width: 100vw;
-        min-height: 30%;       
+        flex-direction: row; 
       }      
     }
 
