@@ -34,36 +34,27 @@
       border-width: 2px;            
       text-align: center;
       align-items: center;
+      min-width: 20vw;        
     }
 
     li {
       width: fit-content;              
     }    
-/*
+
     .pricing-plan * {
       text-align: center;
       align-items: center;   
     }
-*/
+
 
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
-
-      .pricing-plan {
-        width: 20vw;
-        min-width: 15vw;        
-      }            
-
       .pricing-container {
         flex-direction: column;               
       }
     }
   
     @media (min-width: 1251px) {
-
-      .pricing-plan {
-        width: 25vw;
-      }      
       .pricing-container {
       flex-direction: row;       
       }      
