@@ -12,20 +12,20 @@
     }
     .pricing-container {
       display: flex;
-      justify-content: space-around;
       width: 100vh;
-      height: 100vh;      
+      height: 100vh;          
+      justify-content: space-around;
       align-items: center;
     }
 
     .pricing-plan {
-      text-align: center;
-      align-items: center;
+      width: 200px;
+      height: 200px;
       border-color: black;
       background-color: lightgrey;
-      border-width: 2px;
-      width: auto;      
-      height: auto;
+      border-width: 2px;            
+      text-align: center;
+      align-items: center;
     }
 
     .pricing-plan * {
@@ -36,24 +36,17 @@
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
       .pricing-container {
-        flex-direction: column;            
+        flex-direction: column;               
       }
-      .pricing-plan {
-      width: 200px;
-      height: 200px;
-      }
+
     }
   
     @media (min-width: 1251px) {
       .pricing-container {
-      flex-direction: row;        
-      }
-      .pricing-plan {
-      width: 300px;
-      height: 300px;       
-      }
-      
+      flex-direction: row;       
+      }      
     }
+
   </style>
 </head>
 
